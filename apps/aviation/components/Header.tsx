@@ -101,7 +101,7 @@ export default function Header() {
         </div>
       </div>
 
-      <nav className="w-full bg-white shadow-sm">
+      <nav className="w-full bg-white shadow-sm relative z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <Link href="/" className="shrink-0">
@@ -133,7 +133,7 @@ export default function Header() {
                   <ChevronDown className={`w-4 h-4 transition-transform ${charterOpen ? "rotate-180" : ""}`} />
                 </button>
                 {charterOpen && (
-                  <div className="absolute top-full left-0 pt-2">
+                  <div className="absolute top-full left-0 pt-2 z-50">
                     <div className="w-56 bg-white rounded-lg shadow-xl border border-[#F3F4F6] py-2">
                       {charterDropdown.map((item) => (
                         <Link
@@ -160,7 +160,7 @@ export default function Header() {
                   <ChevronDown className={`w-4 h-4 transition-transform ${assetOpen ? "rotate-180" : ""}`} />
                 </button>
                 {assetOpen && (
-                  <div className="absolute top-full left-0 pt-2">
+                  <div className="absolute top-full left-0 pt-2 z-50">
                     <div className="w-56 bg-white rounded-lg shadow-xl border border-[#F3F4F6] py-2">
                       {assetDropdown.map((item) => (
                         <Link
