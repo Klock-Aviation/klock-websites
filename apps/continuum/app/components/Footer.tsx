@@ -50,13 +50,13 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full bg-[#0D1B2A] border-t border-white/10">
+    <footer className="w-full bg-[#0A131F] border-t border-white/10">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 xl:px-20 py-12">
         {/* Top Row: Logo & Social Icons */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 pb-10 border-b border-white/10">
           <div className="flex items-center gap-4">
             <Image
-              src="https://c.animaapp.com/mka8pwc5Z213Gu/img/png-1-1.png"
+              src="/images/logos/klock-logo-white.png"
               alt="Klock Aviation"
               width={120}
               height={40}
@@ -75,7 +75,7 @@ export default function Footer() {
               href="https://facebook.com/klockaviation"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-[#EFBF04] hover:text-[#0D1B2A] transition-all"
+              className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-[#EFBF04] hover:text-[#0A131F] transition-all"
             >
               <FacebookIcon className="w-4 h-4" />
             </a>
@@ -83,7 +83,7 @@ export default function Footer() {
               href="https://twitter.com/klockaviation"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-[#EFBF04] hover:text-[#0D1B2A] transition-all"
+              className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-[#EFBF04] hover:text-[#0A131F] transition-all"
             >
               <TwitterIcon className="w-4 h-4" />
             </a>
@@ -91,7 +91,7 @@ export default function Footer() {
               href="https://linkedin.com/company/klockaviation"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-[#EFBF04] hover:text-[#0D1B2A] transition-all"
+              className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-[#EFBF04] hover:text-[#0A131F] transition-all"
             >
               <LinkedinIcon className="w-4 h-4" />
             </a>
@@ -99,7 +99,7 @@ export default function Footer() {
               href="https://instagram.com/klockaviation"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-[#EFBF04] hover:text-[#0D1B2A] transition-all"
+              className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-[#EFBF04] hover:text-[#0A131F] transition-all"
             >
               <InstagramIcon className="w-4 h-4" />
             </a>
@@ -107,7 +107,7 @@ export default function Footer() {
               href="https://youtube.com/klockaviation"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-[#EFBF04] hover:text-[#0D1B2A] transition-all"
+              className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-[#EFBF04] hover:text-[#0A131F] transition-all"
             >
               <YoutubeIcon className="w-4 h-4" />
             </a>
@@ -132,7 +132,7 @@ export default function Footer() {
                 <a
                   key={line.name}
                   href={line.href}
-                  className="group bg-[#1B2838] rounded-xl p-6 text-center border border-transparent hover:border-[#EFBF04] transition-all hover:-translate-y-1"
+                  className="group bg-[#111D2C] rounded-xl p-6 text-center border border-transparent hover:border-[#EFBF04] transition-all hover:-translate-y-1"
                 >
                   <div
                     className={`w-14 h-14 rounded-xl ${line.iconBg} flex items-center justify-center mx-auto mb-4`}

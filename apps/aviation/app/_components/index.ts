@@ -1,0 +1,12 @@
+export { HeroSection } from "./HeroSection";
+export { SearchFilterSection } from "./SearchFilterSection";
+export { FeaturedServicesSection } from "./FeaturedServicesSection";
+export { ClientTestimonialsSection } from "./ClientTestimonialsSection";
+export { PopularDestinationsSection } from "./PopularDestinationsSection";
+export { OurClientsSection } from "./OurClientsSection";
+export { WhyChooseUsSection } from "./WhyChooseUsSection";
+export { VirtualAircraftToursSection } from "./VirtualAircraftToursSection";
+export { CTASection } from "./CTASection";
+export { CarbonOffsettingSection } from "./CarbonOffsettingSection";
+export { NewsletterSection } from "./NewsletterSection";
+export { TrustedLeadersSection } from "./TrustedLeadersSection";

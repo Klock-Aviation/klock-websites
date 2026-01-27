@@ -1,8 +1,8 @@
-import { ArrowRightIcon } from "lucide-react";
+import { ArrowRightIcon, Plane, BarChart3, Leaf } from "lucide-react";
 
 const ecosystemCards = [
   {
-    icon: "https://c.animaapp.com/mka8pwc5Z213Gu/img/overlay-2.svg",
+    icon: Plane,
     title: "Aviation Services & Asset Solutions",
     tagline: "Where flight begins and performance is perfected.",
     description:
@@ -11,7 +11,7 @@ const ecosystemCards = [
     url: "https://fly.klockaviation.com",
   },
   {
-    icon: "https://c.animaapp.com/mka8pwc5Z213Gu/img/overlay-1.svg",
+    icon: BarChart3,
     title: "Analytics, Intelligence & Experience Platforms",
     tagline: "Where data becomes a competitive edge.",
     description:
@@ -20,7 +20,7 @@ const ecosystemCards = [
     url: "https://intelligence.klockaviation.com",
   },
   {
-    icon: "https://c.animaapp.com/mka8pwc5Z213Gu/img/overlay.svg",
+    icon: Leaf,
     title: "Infrastructure, Sustainability & ESG Solutions",
     tagline: "Where aviation meets the planet responsibly.",
     description:
@@ -32,7 +32,7 @@ const ecosystemCards = [
 
 export default function ThreeForcesSection() {
   return (
-    <section className="relative w-full py-32 px-6 bg-linear-to-b from-[#0a131f] to-[#111d2c]">
+    <section id="three-forces" className="relative w-full py-32 px-6 bg-linear-to-b from-[#0a131f] to-[#111d2c]">
       <div className="absolute w-full top-0 left-0 h-px bg-linear-to-r from-transparent via-[#ce9d22]/30 to-transparent" />
 
       <div className="flex flex-col max-w-7xl mx-auto items-start gap-16">
@@ -58,41 +58,41 @@ export default function ThreeForcesSection() {
         </header>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full">
-          {ecosystemCards.map((card, index) => (
-            <div
-              key={index}
-              className="bg-[#111d2c]/50 rounded-2xl border border-[#2d3e53]/50 backdrop-blur-sm p-8 flex flex-col gap-4 hover:border-[#efbf04]/50 transition-all duration-300"
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img 
-                className="w-14 h-14" 
-                alt={card.title}
-                src={card.icon} 
-              />
-
-              <h3 className="font-serif font-normal text-[#f8f6f2] text-2xl tracking-[0] leading-8">
-                {card.title}
-              </h3>
-
-              <p className="font-normal italic text-[#efbf04] text-xl tracking-[0] leading-5">
-                {card.tagline}
-              </p>
-
-              <p className="font-normal text-[#8597ad] text-lg tracking-[0] leading-relaxed">
-                {card.description}
-              </p>
-
-              <a 
-                href={card.url}
-                className="inline-flex items-center gap-2 mt-2 group"
+          {ecosystemCards.map((card, index) => {
+            const IconComponent = card.icon;
+            return (
+              <div
+                key={index}
+                className="bg-[#111d2c]/50 rounded-2xl border border-[#2d3e53]/50 backdrop-blur-sm p-8 flex flex-col gap-4 hover:border-[#efbf04]/50 transition-all duration-300"
               >
-                <span className="font-medium text-[#efbf04] text-sm tracking-[0] leading-5 whitespace-nowrap">
-                  {card.link}
-                </span>
-                <ArrowRightIcon className="w-4 h-4 text-[#efbf04] transition-transform group-hover:translate-x-1" />
-              </a>
-            </div>
-          ))}
+                <div className="w-14 h-14 rounded-xl bg-[#EFBF04]/15 flex items-center justify-center">
+                  <IconComponent className="w-7 h-7 text-[#EFBF04]" />
+                </div>
+
+                <h3 className="font-serif font-normal text-[#f8f6f2] text-2xl tracking-[0] leading-8">
+                  {card.title}
+                </h3>
+
+                <p className="font-normal italic text-[#efbf04] text-xl tracking-[0] leading-5">
+                  {card.tagline}
+                </p>
+
+                <p className="font-normal text-[#8597ad] text-lg tracking-[0] leading-relaxed">
+                  {card.description}
+                </p>
+
+                <a 
+                  href={card.url}
+                  className="inline-flex items-center gap-2 mt-2 group"
+                >
+                  <span className="font-medium text-[#efbf04] text-sm tracking-[0] leading-5 whitespace-nowrap">
+                    {card.link}
+                  </span>
+                  <ArrowRightIcon className="w-4 h-4 text-[#efbf04] transition-transform group-hover:translate-x-1" />
+                </a>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

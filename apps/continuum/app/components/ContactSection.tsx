@@ -2,7 +2,7 @@ import { PhoneIcon, MailIcon, MapPinIcon, ClockIcon } from "lucide-react";
 
 export default function ContactSection() {
   return (
-    <section className="relative w-full py-24 md:py-32 px-6 lg:px-12 xl:px-20 bg-[#1B2838]">
+    <section className="relative w-full py-24 md:py-32 px-6 lg:px-12 xl:px-20 bg-[#111D2C]">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="flex flex-col items-center gap-4 mb-16 text-center">
@@ -20,7 +20,7 @@ export default function ContactSection() {
         {/* Contact Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Phone */}
-          <div className="bg-[#0D1B2A] rounded-xl p-6 border border-[#243447] text-center">
+          <div className="bg-[#0A131F] rounded-xl p-6 border border-[#2D3E53] text-center">
             <div className="w-12 h-12 rounded-full bg-[rgba(215,180,106,0.15)] flex items-center justify-center mx-auto mb-4">
               <PhoneIcon className="w-5 h-5 text-[#EFBF04]" />
             </div>
@@ -31,7 +31,7 @@ export default function ContactSection() {
           </div>
 
           {/* Email */}
-          <div className="bg-[#0D1B2A] rounded-xl p-6 border border-[#243447] text-center">
+          <div className="bg-[#0A131F] rounded-xl p-6 border border-[#2D3E53] text-center">
             <div className="w-12 h-12 rounded-full bg-[rgba(215,180,106,0.15)] flex items-center justify-center mx-auto mb-4">
               <MailIcon className="w-5 h-5 text-[#EFBF04]" />
             </div>
@@ -42,7 +42,7 @@ export default function ContactSection() {
           </div>
 
           {/* Location */}
-          <div className="bg-[#0D1B2A] rounded-xl p-6 border border-[#243447] text-center">
+          <div className="bg-[#0A131F] rounded-xl p-6 border border-[#2D3E53] text-center">
             <div className="w-12 h-12 rounded-full bg-[rgba(215,180,106,0.15)] flex items-center justify-center mx-auto mb-4">
               <MapPinIcon className="w-5 h-5 text-[#EFBF04]" />
             </div>
@@ -53,7 +53,7 @@ export default function ContactSection() {
           </div>
 
           {/* Hours */}
-          <div className="bg-[#0D1B2A] rounded-xl p-6 border border-[#243447] text-center">
+          <div className="bg-[#0A131F] rounded-xl p-6 border border-[#2D3E53] text-center">
             <div className="w-12 h-12 rounded-full bg-[rgba(215,180,106,0.15)] flex items-center justify-center mx-auto mb-4">
               <ClockIcon className="w-5 h-5 text-[#EFBF04]" />
             </div>
@@ -67,13 +67,13 @@ export default function ContactSection() {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12">
           <a 
-            href="https://fly.klockaviation.com/book" 
+            href="https://fly.klockaviation.com" 
             className="h-14 px-10 bg-[#EFBF04] hover:bg-[#d4a84a] rounded-md flex items-center gap-2 transition-colors"
           >
-            <span className="text-[#0D1B2A] text-base font-semibold">Book a Flight</span>
+            <span className="text-[#0A131F] text-base font-semibold">Book a Flight</span>
           </a>
           <a 
-            href="https://intelligence.klockaviation.com/demo" 
+            href="https://intelligence.klockaviation.com" 
             className="h-14 px-10 border border-white/30 hover:bg-white/10 rounded-md flex items-center gap-2 transition-colors"
           >
             <span className="text-white text-base font-semibold">Request a Demo</span>

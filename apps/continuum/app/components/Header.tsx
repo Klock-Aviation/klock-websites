@@ -19,7 +19,7 @@ export default function Header() {
       <div className="w-full relative h-12">
         <div className="absolute inset-0 bg-[#EFBF04]" />
         <div 
-          className="absolute top-0 left-0 h-full bg-[#0D1B2A]"
+          className="absolute top-0 left-0 h-full bg-[#0A131F]"
           style={{ 
             width: '65%',
             clipPath: 'polygon(0 0, 100% 0, 95% 100%, 0 100%)'
@@ -48,18 +48,18 @@ export default function Header() {
           {/* Right: Login & Social */}
           <div className="flex items-center gap-3 lg:gap-5">
             <div className="flex items-center gap-2">
-              <UserIcon className="w-4 h-4 text-[#0D1B2A]" />
-              <span className="text-[#0D1B2A] text-xs lg:text-sm font-semibold whitespace-nowrap">Login / Register</span>
+              <UserIcon className="w-4 h-4 text-[#0A131F]" />
+              <span className="text-[#0A131F] text-xs lg:text-sm font-semibold whitespace-nowrap">Login / Register</span>
             </div>
-            <div className="hidden md:block w-px h-4 bg-[#0D1B2A]/30" />
+            <div className="hidden md:block w-px h-4 bg-[#0A131F]/30" />
             <div className="hidden md:flex items-center gap-2">
-              <span className="text-[#0D1B2A] text-xs lg:text-sm font-normal whitespace-nowrap">Follow Us:</span>
+              <span className="text-[#0A131F] text-xs lg:text-sm font-normal whitespace-nowrap">Follow Us:</span>
               <div className="flex items-center gap-1.5">
-                <FacebookIcon className="w-3.5 h-3.5 text-[#0D1B2A] cursor-pointer hover:opacity-70" />
-                <TwitterIcon className="w-3.5 h-3.5 text-[#0D1B2A] cursor-pointer hover:opacity-70" />
-                <LinkedinIcon className="w-3.5 h-3.5 text-[#0D1B2A] cursor-pointer hover:opacity-70" />
-                <InstagramIcon className="w-3.5 h-3.5 text-[#0D1B2A] cursor-pointer hover:opacity-70" />
-                <YoutubeIcon className="w-3.5 h-3.5 text-[#0D1B2A] cursor-pointer hover:opacity-70" />
+                <FacebookIcon className="w-3.5 h-3.5 text-[#0A131F] cursor-pointer hover:opacity-70" />
+                <TwitterIcon className="w-3.5 h-3.5 text-[#0A131F] cursor-pointer hover:opacity-70" />
+                <LinkedinIcon className="w-3.5 h-3.5 text-[#0A131F] cursor-pointer hover:opacity-70" />
+                <InstagramIcon className="w-3.5 h-3.5 text-[#0A131F] cursor-pointer hover:opacity-70" />
+                <YoutubeIcon className="w-3.5 h-3.5 text-[#0A131F] cursor-pointer hover:opacity-70" />
               </div>
             </div>
           </div>
@@ -69,9 +69,9 @@ export default function Header() {
       {/* Nav Bar - White */}
       <div className="w-full bg-white">
         <div className="w-full flex items-center justify-between px-6 lg:px-12 xl:px-20 py-4">
-          <Link href="/" className="flex-shrink-0">
+          <Link href="/" className="shrink-0">
             <Image
-              src="https://c.animaapp.com/mka8pwc5Z213Gu/img/png-1-1.png"
+              src="/images/logos/klock-logo.png"
               alt="Klock Aviation"
               width={170}
               height={56}
@@ -81,28 +81,40 @@ export default function Header() {
           </Link>
 
           <nav className="hidden lg:flex items-center gap-6 xl:gap-10">
-            <button className="text-[#4B5563] hover:text-[#0D1B2A] font-semibold text-base xl:text-lg transition-colors whitespace-nowrap">
+            <a 
+              href="https://fly.klockaviation.com" 
+              className="text-[#4B5563] hover:text-[#0A131F] font-semibold text-base xl:text-lg transition-colors whitespace-nowrap"
+            >
               Aviation Services
-            </button>
-            <button className="text-[#4B5563] hover:text-[#0D1B2A] font-semibold text-base xl:text-lg transition-colors whitespace-nowrap">
+            </a>
+            <a 
+              href="https://intelligence.klockaviation.com" 
+              className="text-[#4B5563] hover:text-[#0A131F] font-semibold text-base xl:text-lg transition-colors whitespace-nowrap"
+            >
               Analytics &amp; Intelligence
-            </button>
-            <button className="text-[#4B5563] hover:text-[#0D1B2A] font-semibold text-base xl:text-lg transition-colors whitespace-nowrap">
+            </a>
+            <a 
+              href="https://sustainable.klockaviation.com" 
+              className="text-[#4B5563] hover:text-[#0A131F] font-semibold text-base xl:text-lg transition-colors whitespace-nowrap"
+            >
               Infrastructure &amp; ESG
-            </button>
+            </a>
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            <button className="h-12 px-8 bg-[#0D1B2A] hover:bg-[#1a2d42] rounded-lg transition-colors">
+            <button className="h-12 px-8 bg-[#0A131F] hover:bg-[#1a2d42] rounded-lg transition-colors">
               <span className="text-white text-base font-medium">Contact Us</span>
             </button>
-            <button className="h-12 px-8 bg-[#0D1B2A] hover:bg-[#1a2d42] rounded-lg transition-colors">
+            <a 
+              href="https://fly.klockaviation.com" 
+              className="h-12 px-8 bg-[#0A131F] hover:bg-[#1a2d42] rounded-lg transition-colors flex items-center justify-center"
+            >
               <span className="text-white text-base font-medium">Book Now</span>
-            </button>
+            </a>
           </div>
 
           <button className="lg:hidden p-2">
-            <svg className="w-6 h-6 text-[#0D1B2A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-6 h-6 text-[#0A131F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
