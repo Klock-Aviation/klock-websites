@@ -185,13 +185,6 @@ export default function Header() {
               </Link>
 
               <Link 
-                href="/about" 
-                className="text-[#00113A] font-medium text-sm hover:text-[#EFBF04] transition-colors"
-              >
-                About Us
-              </Link>
-
-              <Link 
                 href="/contact" 
                 className="text-[#00113A] font-medium text-sm hover:text-[#EFBF04] transition-colors"
               >
@@ -286,14 +279,6 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Blog
-              </Link>
-
-              <Link 
-                href="/about" 
-                className="block py-2 text-[#00113A] font-medium"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                About Us
               </Link>
 
               <Link 
