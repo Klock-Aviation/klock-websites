@@ -50,9 +50,7 @@ export default function Footer() {
               <img
                 src="/images/logos/klock-logo-white.png"
                 alt="Klock Aviation"
-                width={120}
-                height={40}
-                className="h-10 w-auto object-contain"
+                style={{ height: "48px", width: "auto" }}
               />
             </Link>
             <p 
